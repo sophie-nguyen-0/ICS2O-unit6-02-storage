@@ -16,6 +16,4 @@ if (navigator.serviceWorker) {
 /**
  * this function
  */
-function myCookieClicked() {
-  
-}
+function myCookieClicked() {}
