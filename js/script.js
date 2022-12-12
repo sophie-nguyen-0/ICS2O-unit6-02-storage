@@ -14,6 +14,6 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * this function
+ * this function cookies
  */
 function myCookieClicked() {}
