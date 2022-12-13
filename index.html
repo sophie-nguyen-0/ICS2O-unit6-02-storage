@@ -46,7 +46,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <title>hi</title>
   </head>
-  <body>
+  <body onload="updateCookieCount()">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <!-- Always shows a header, even in smaller screens. -->
@@ -69,7 +69,7 @@
         />
         <br />
         <br />
-        <div id="points" onload="updateCookieCount()"></div>
+        <div id="points"></div>
       </main>
     </div>
   </body>

@@ -16,4 +16,16 @@ if (navigator.serviceWorker) {
 /**
  * this function cookies
  */
-function myCookieClicked() {}
+function myCookieClicked() {
+  if (localStorage.clicks) {
+    localStorage.clicks = Number(localStorage.clicks) + 1
+  }
+  else {
+    localStorage.clicks = 0
+  }
+  document.getElementById("points").innerHTML = localStorage.clicks
+}
+
+function updateCookieCount() {
+  document.getElementById("points").innerHTML = localStorage.clicks
+}
