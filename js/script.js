@@ -19,8 +19,7 @@ if (navigator.serviceWorker) {
 function myCookieClicked() {
   if (localStorage.clicks) {
     localStorage.clicks = Number(localStorage.clicks) + 1
-  }
-  else {
+  } else {
     localStorage.clicks = 0
   }
   document.getElementById("points").innerHTML = localStorage.clicks
