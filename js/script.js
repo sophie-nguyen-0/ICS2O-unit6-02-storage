@@ -17,14 +17,17 @@ if (navigator.serviceWorker) {
  * this function cookies
  */
 function myCookieClicked() {
-  if (localStorage.clicks) {
-    localStorage.clicks = Number(localStorage.clicks) + 1
-  } else {
-    localStorage.clicks = 0
-  }
+  localStorage.clicks ++
   document.getElementById("points").innerHTML = localStorage.clicks
 }
 
 function updateCookieCount() {
+  if (localStorage.clicks) {
+    localStorage.clicks = Number(localStorage.clicks)
+  }
+  else {
+    localStorage.clicks = 0
+  }
   document.getElementById("points").innerHTML = localStorage.clicks
+
 }
